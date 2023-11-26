@@ -14,13 +14,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dwikyryan.CRUDBlog.model.Blog;
-import com.dwikyryan.CRUDBlog.repository.BlogRepository;
 import com.dwikyryan.CRUDBlog.service.BlogService;
 
 @RestController
 public class BlogController {
-    @Autowired
-    BlogRepository blogRepository;
 
     @Autowired
     BlogService blogService;
